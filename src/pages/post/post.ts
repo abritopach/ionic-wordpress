@@ -1,5 +1,6 @@
 import { Component } from '@angular/core';
 import { IonicPage, NavController, NavParams } from 'ionic-angular';
+import { Post } from '../../providers/wp-provider';
 
 /**
  * Generated class for the PostPage page.
@@ -10,16 +11,16 @@ import { IonicPage, NavController, NavParams } from 'ionic-angular';
 
 @IonicPage()
 @Component({
-  selector: 'page-post',
-  templateUrl: 'post.html',
+    selector: 'page-post',
+    templateUrl: 'post.html',
 })
 export class PostPage {
 
-  constructor(public navCtrl: NavController, public navParams: NavParams) {
-  }
+    constructor(public navCtrl: NavController, public navParams: NavParams) {
+    }
 
-  ionViewDidLoad() {
-    console.log('ionViewDidLoad PostPage');
-  }
+    ionViewDidLoad() {
+        console.log('ionViewDidLoad PostPage');
+    }
 
 }
