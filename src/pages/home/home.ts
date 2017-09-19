@@ -22,7 +22,7 @@ export class HomePage {
         this.presentLoading();
         this.posts = this.wpProvider.getPosts();
         this.posts.subscribe(data => {
-                console.log(data);
+                //console.log(data);
                 this.loader.dismiss()
             }
         );

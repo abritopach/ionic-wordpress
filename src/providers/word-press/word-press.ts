@@ -1,5 +1,4 @@
 import { Injectable } from '@angular/core';
-import { Http } from '@angular/http';
 import { Observable } from 'rxjs/Observable';
 import 'rxjs/add/operator/map';
 import { WpApiPosts, WpApiMedia, WpApiUsers } from 'wp-api-angular';
@@ -36,7 +35,7 @@ export class WordPressProvider {
         this.wpApiUsers.getList()
             .map(res => res.json())
             .subscribe(data => {
-                console.log(data);
+                //console.log(data);
                 this.users = [];
                 for (let user of data) {
                     let oneUser = new User(user[ 'id' ], user[ 'name' ], user[ 'avatar_urls' ][ '96' ]);
